@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="style01.css">
+    <link rel="stylesheet" href="style02.css">
 
     <title>TUGAS 02</title>
 </head>
@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link js-scroll-trigger text-dark" href="#home">HOME <span
+                        <a class="nav-link js-scroll-trigger text-dark" href="../tbo.html">HOME <span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
@@ -53,7 +53,7 @@
     <!-- jumbotron -->
     <div id="background">
         <div class="jumbotron">
-            <h1>TUGAS 02</h1>
+            <h1>NOTASI BIG 0</h1>
         </div>
     </div>
 
@@ -62,12 +62,95 @@
     <div id="home">
         <div class="isi">
             <div class="container atas">
-                <h1>NOTASI BIG 0</h1>
                 <div class="row">
-
+                    <p>Ketika kita memikirkan apakah barisan kode yang kita ciptakan sudah cukup “cepat” atau efisien
+                        dalam memecahkan masalah yang ingin kita pecahkan, maka kita butuh sebuah metodologi untuk
+                        menghitungnya. Salah satu alat bantu yang bisa kita gunakan adalah notasi O besar atau Big-O
+                        Notation.</p>
+                    <p>Ini juga berarti kita ingin menghitung kompleksitas dari sebuah kode. Ada dua dimensi dalam
+                        menghitung kompleksitas kode. Pertama adalah kompleksitas ruang atau space complexity yang
+                        berkaitan dengan berapa banyak ruang yang digunakan seperti memori ataupun harddisk komputer.
+                        Kedua adalah kompleksitas waktu atau time complexity yang berkaitan berapa lama baris kode
+                        dijalankan.</p>
                 </div>
                 <div class="row">
-
+                    <h4>1. Pengertian</h4>
+                    <p>Notasi O besar atau yang lazim disebut dengan Big-O Notation adalah sebuah cara atau metode untuk
+                        melakukan analisa terhadap sebuah algoritma pemrograman terhadap waktu eksekusi. Tentang
+                        seberapa efisien dan kompleksitas barisan kode dalam dimensi waktu.</p>
+                    <p>Notasi O besar merupakan skenario terburuk dari sebuah algoritma, dan biasanya terdapat notasi
+                        “n” yang merepresentasikan jumlah masukan. Berikut adalah diagram notasi O besar dengan masukan
+                        yang dimulai dari 0 hingga tak terhingga.</p>
+                    <img class="no1" src="01.png" alt="">
+                </div>
+                <div class="row">
+                    <h4>2. Kegunaan</h4>
+                    <div>
+                        <h5>a. Infinite Asymptotic</h5>
+                        <p>Notasi O Besar sangat berguna untuk mengnalisa efisiensi suatu algoritma. Misalnya, waktu
+                            yang diperlukan untuk menyelesaikan sebuah masalah dengan parameter n bisa jadi T(n) = 4n2 –
+                            2n +
+                            2
+                        </p>
+                        <p>Semakin n bertambah besar, suku n2 akan mendominasi pertumbuhan, sehingga suku-suku yang lain
+                            dapat diabaikan. Sebagai perumpamaan, jika n = 500, suku 4n2 akan 1000 kali lebih besar
+                            daripada suku 2n, sehingga mengabaikan suku-suku yang lebih kecil tidak akan memberikan efek
+                            yang
+                            cukup signifikan. Lebih jauh lagi, koefisien dari suku tersebut menjadi tidak relevan /
+                            dapat
+                            diabaikan. Misalnya ekspresi yang mengandung suku n2 atau 2n. Meskipun T(n) = 1.000.000n2,
+                            jika U(n) = nx, koefisien selalu dapat diabaikan, karena n berkembang lebih besar dari
+                            1.000.000.
+                        </p>
+                        <p>(T(1.000.000)) = 1.000.000x = U(1.000.000)). </br></p>
+                    </div>
+                    <div>
+                        <h5>b. Infinitesimal Asymptotic</h5>
+                        <p>Notasi O Besar dapat pula digunakan untuk menggambarkan kesalahan dalam sebuah aproksimasi
+                            dalam
+                            fungsi matematika. Seperti misalnya : Mengekspresikan bahwa kesalahannya, memiliki selisih
+                            dan
+                            lebih kecil dalam nilai absolut dibandingkan waktu konstan |n|3 untuk x mendekati 0. Dalam
+                            analisa asimptotik, kita lebih mementingkan kecenderungan ukuran (order of magnitude)
+                            daripada
+                            nilai aktual/sebenarnya dari sebuah fungsi. Dan lagi, kita tidak perlu mengetahui berapa
+                            lama
+                            waktu yang dibutuhkan untuk melakukan suatu operasi pada jenis komputer tertentu. Yang
+                            jelas,
+                            kita dengan mudah dapat melihat bahwa “n2“ adalah fungsi yang berkembang jauh lebih cepat
+                            dibandingkan fungsi linear seperi “n”. Untuk menggambarkan kecenderungan ukuran dari suatu
+                            operasi, kita menggunakan “Notasi O Besar”. Jika kita memiliki algoritma yang melakukan 7n4
+                            +
+                            35n3 – 19n2 + 3 operasi, Notasi O Besarnya adalah O(n4). Jika kita memiliki algoritma yang
+                            melakukan 2n + 5 operasi, Notasi O Besarnya adalah O(n). </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4>3. Contoh-Contoh</h4>
+                    <div class="row">
+                        <ul>
+                            <li>O(1)</li>
+                            <li>O(N)</li>
+                            <li>O(N^2)</li>
+                            <li>O(N^3)</li>
+                            <li>O(sqrt(N))</li>
+                            <li>O(log N)</li>
+                            <li>O(N log N)</li>
+                            <li>O(N!)</li>
+                            <li>O(2^N)</li>
+                        </ul>
+                    </div>
+                    <p>Kecepatan program yang diinginkan seorang programmer adalah O(1) yang
+                        maksudnya bagaimanapun
+                        kompleksnya suatu program kecepatannya tetap sama yaitu O(1), Sedangkan O(N) kecepatannya
+                        lambat. O(N) maksudnya waktu yang diperlukan sebanding atau berbanding lurus dengan banyaknya
+                        data, simplenya ada data berjumlah 10 yang selesai dalam 1 detik misalnya, maka ketika datanya
+                        100 biji selesainya dalam 10 detik, jadi waktu yang diperlukan 10 kali, beda dengan O(1)
+                        berapapun data input selesainya tetap 1 detik.</p>
+                    <p>O(N^2) artinya kecepatan program menjadi N^2 atau berbanding parabolic, waktu yang diperlukan itu
+                        berbanding kuadrat dengan banyaknya data, artinya misal data sebanyak 10 selesai dalam 1 detik,
+                        maka data 100 selesai dalam 100 detik. ( data 10 menjadi data 100, maka 10 x lipat, waktu jadi
+                        10*10 = 100 kali!).</p>
                 </div>
             </div>
         </div>

@@ -34,13 +34,7 @@
 #home .container .row p{
     text-indent: 0.3in;
 }
-img.no2{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-}
-img.no3{
+img.no1{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -49,5 +43,5 @@ img.no3{
 #home .isi .container.atas{
     background-color: #FFF5EE;
     margin-top: -300px;
-    padding-bottom: 37px;
+    padding-bottom: 40px;
 }
