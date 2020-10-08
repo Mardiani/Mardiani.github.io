@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style03.css">
+
+    <title>TUGAS 03</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-dark font-weight-bold" href="#">BASIS DATA II</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger text-dark" href="../basdat2.html">HOME <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#tugas" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            TUGAS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../../tbo.html">TBO</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../basdat2.html">Basis Data</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger text-dark" href="../profile/profile.html">PROFIL</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- jumbotron -->
+    <div id="background">
+        <div class="jumbotron">
+            <h1>PROSES DESAIN DATABASE</h1>
+        </div>
+    </div>
+
+    <!-- jumbotron -->
+
+    <!-- container atas -->
+    <div id="home">
+        <div class="isi">
+            <div class="container atas">
+                <h1>TAHAPAN PROSES DESAIN DATABASE</h1>
+                <img class="tahapan" src="tahapan.png" alt="">
+                <div class="row">
+                    <h3>Tahap 1 : Pengumpulan dan Analisis Kebutuhan Data</h3>
+                    <p>Langkah pertama dalam mendesain sebuah aplikasi database adalah memahami dan mengetahui data yang
+                        harus disimpan dalam database, aplikasi apa yang harus dibangun diatasnya, dan jenis operasi apa
+                        yang lebih banyak digunakan dan subyek untuk melakukan persyaratan yang ada, atau dengan kata
+                        lain, kita harus tau apa yang diinginkan pengguna database tersebut.</p>
+                    <p>Aktifitas yang dilakukan :</p>
+                    <div>
+                        <ul>
+                            <li>Area aplikasi mayor dan kelompok pemakai yang akan menggunakan basis data atau pekerjaan
+                                / aplikasinya</li>
+                            <li>Dokumen yang sudah ada yang berhubungan dengan aplikasi dipelajari dan dianalisa.
+                                Dokumen lain seperti police manual, form, report dan struktur organisasi ditinjau
+                                Kembali untuk menentukan dan menguji apakah dokumen-dokumen tersebut berpengaruh
+                                terhadap kumpulan data dan proses spesifikasi.</li>
+                            <li>Lingkungan operasi saat ini dan rencana penggunaan informasi. Menganalisa tipe transaksi
+                                dan frekuensi penggunaannya dan aliran informasi dalam sistem. Karakteristik geografi
+                                seperti pemakai, transaksi asli, tujuan pelaporan. Data input dan output diperinci.</li>
+                            <li>Penulisan respon dari kuesioner pemakai potensial untuk mendapatkan informasi yg
+                                berharga</li>
+                        </ul>
+                    </div>
+                    <p>3 Pendekatan dalam manajemem kebutuhan:</p>
+                    <div>
+                        <ul>
+                            <li>Terpusat (Centrelized)</li>
+                            <img class="tahap2" src="terpusat.png" alt="">
+                            <li>View Integration</li>
+                            <img class="tahap2" src="view.png" alt="">
+                            <li>Kombinasi Keduanya</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <h3>Tahap 2 : Desain Konseptual</h3>
+                    <p>Informasi dikumpulkan pada saat analisis persyaratan digunakan untuk mengembangkan deskripsi data
+                        tingkat tinggi yang harus disimpan dalam database, bersama dengan batasan yang telah diketahui
+                        untuk menetapkan penyimpanan data tersebut. Langkah ini sering dilakukan dengan menggunkan model
+                        ER. Model ER adalah salah satu dari model data tingkat tinggi, atau semantik, yang digunakan
+                        dalam desain database. Tujuannya adalah menciptakan gambaran sederhana tentang data yang mirip
+                        dengan pemikiran pengguna dan pengembang mengenai data tersebut (orang dan proses yang
+                        dinyatakan dalam data tersebut). </p>
+                    <p>Aktifitas Paralel:
+                    <ol>
+                        <li>Desain Skema Konseptual</li>
+                        <ul>
+                            <li>Memberikan gambaran yang lengkap dari struktur basis data yaitu arti, hubungan, dan
+                                batasan-batasan.</li>
+                            <li>Conceptual schema bersifat tetap</li>
+                            <li>Alat komunikasi antar pemakai basis data, designer, dan analis.</li>
+                            <li>Harus bersifat: Mampu menyatakan relationship, batasan-batasan, diagram, formal, simple
+                            </li>
+                        </ul>
+                        <ul>Strategi:
+                            <li>Top Down</li>
+                            <ul>
+                                <li>Mulai dengan beberapa high level entity type</li>
+                                <li>Bagi lagi (top down) menjadi beberapa lower-level entity type dan Relationship type
+                                </li>
+                                <img class="tahap2" src="topdown.png" alt="">
+                                <li>a. Membangkitkan tipe entiti baru.</li>
+                                <li>b. Dekomposisi tipe entiti ke dalam dua tipe entiti dan relasi</li>
+                            </ul>
+                            <li>Botton Up</li>
+                            <ul>
+                                <li>Mulai dengan atribut</li>
+                                <li>Kelompokkan menjadi entity type & relationship type</li>
+                                <li>Tambahkan relationship-relationship</li>
+                                <img class="tahap2" src="bottonup.png" alt="">
+                                <li>a. Menemukan dan menambah relasi baru.</li>
+                                <li>b. Menemukan katagori baru (tipe union) dan menghubungkannya.</li>
+                            </ul>
+                            <li>Inside Out</li>
+                            <ul>
+                                <li>Bentuk khusus dari bottom-up</li>
+                                <li>Mula-mula ditentukan entity type yang merupakan pusat/bagian terpenting tambahkan
+                                    entity type dan relationship lain yang berhubungan satu sama lain</li>
+                            </ul>
+                        </ul>
+                        <br>
+                        <li>Desain Transaksi dan Aplikasi</li>
+                        <ul>
+                            <li>Pada saat basis data didesain, aplikasi dari transaksi utama harus sudah diketahui</li>
+                            <li>Transaksi-transaksi baru dapat didefinisikan kemudian</li>
+                            <li>Tentukan karakteristik dari transaksi dan periksa apakah basis data sudah memuat semua
+                                informasi untuk melaksanakan transaksi</li>
+                            <li>Transaksi dapat dibagi dalam 3 bagian yaitu: retrieval, update, mixed</li>
+                            <li>Tahap 2A dan 2B sebaiknya dilaksanakan secara paralel dengan menggunakan umpan balik
+                                agar didapat skema desain dan transaksi yang stabil</li>
+                        </ul>
+                    </ol>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <h3>Tahap 3 : Pemilihan DBMS</h3>
+                    <p>Dalam langkah ini adalah menentukan/memilih DBMS yang akan digunakan untuk mengimplementasikan
+                        desain database dan mengubah konsep desain database menjadi sebuah skema database dalam model
+                        data dari DBMS terpilih. Dalam langkah ini merupakan proses perubahan dari skema ER Diagram
+                        menjadi skema Database Relasional (RDBMS).</p>
+
+                    <div>
+                        <p>Langkah Utama dalam memilih DBMS : (Connoly)</p>
+                        <ol>
+                            <li>Lihat informasi DBMS dari referensi</li>
+                            <li>Buat daftar 2 atau 3 produk</li>
+                            <li>Evaluasi produk</li>
+                            <li>Rekomendasi dan buat reportnya</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <p>Faktor dalam Pemilihan DBMS :</p>
+                        <ol>
+                            <li>Faktor teknis: berhubungan dengan ketepatan DBMS yang dipilih (tipe DBMS : relational,
+                                object relational dll) Struktur penyimpanan, storage, akses path, ketersediaan user
+                                interface dan programmer, bahasa query, dll</li>
+                            <li>Faktor ekonomi: Biaya Software, biaya Hardware, Biaya pembuatan database dan konversi,
+                                biaya Maintenance, Personal cost ,training, operasi.</li>
+                            <li>Faktor Organisasi : Struktur organisasi, Personal yang terbiasa dengan sistem yang
+                                terdahulu , Ketersediaan dari service vendor</li>
+                        </ol>
+
+                    </div>
+
+                    <div>
+                        <p>BEBARAPA FITUR UNTUK EVALUASI DMBS
+                            <img class="tahap3" src="dbms.png" alt="">
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h3>Tahap 4 : Pemetaan Model Data (Desain Basis Data Logika)</h3>
+                    <p>Membuat skema konseptual dan skema eksernal dalam model data dari DBMS terpilih </p>
+                    <ul>Proses pemetaan dalam dua bentuk :
+                        <li>Pemetaan yang Tidak Tergantung pada Sistem (System- Independet Mapping). Pada bentuk ini,
+                            pemetaan tidak mempertimbangkan karakteristik khusus atau kasus khusus yang
+                            diaplikasikan ke implementasi DBMS dari model data.
+                        </li>
+                        <li>Penyesuaian Skema ke DBMS yang Spesifik (Tailoring the Schemas to Specific DBMS ). DBMS
+                            yang berbeda mengimplementasikan model data dengan menggunakan pemodelah khusus. Hasilnya
+                            merupakan pernyataan DDL dari DBMS yang dipilih</li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <h3>Tahap 5 : Desain Fisik</h3>
+                    <ul>
+                        <li>Proses pemilihan struktur penyimpanan dan jalur akses pada file-file basis data untuk
+                            mencapai penampilan yang terbaik pada bermacam aplikasi.
+                        </li>
+                        <li>Dirancang spesifikasi-spesifikasi untuk basis data yang disimpang yang berhubungan dengan
+                            struktur-struktur penyimpanan fisik, penempatan record dan jalur akses</li>
+                    </ul>
+                    <p>Beberapa petunjuk dalam pemilihan perancangan basis data secara fisik :</p>
+                    <ol>
+                        <li>Waktu Respon</li>
+                        <ul>
+                            <li>Waktu transaksi basis data untuk menerima respon selama eksekusi</li>
+                            <li>Waktu respon dipengaruhi waktu akses basis data untuk data item yang ditunjuk oleh suatu
+                                transaksi</li>
+                        </ul>
+                        <li>Penggunaan Ruang Penyimpanan
+                            <p>Jumlah ruang penyimpanan yang digunakan oleh file basis data dan stuktur-struktur jalur
+                                akses.</p>
+                        </li>
+                        <li>Transaction Throughput
+                            <p>Rata-rata jumlah transaksi yang dapat diproses per menit oleh sistem basis data, dan
+                                merupakan parameter kritis dari sistem transaksi (misal : digunakan pada pemesanan
+                                tempat di pesawat, bank, dll).</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="row">
+                    <h3>Tahap 6 : Implementasi Basis Data</h3>
+                    <ul>
+                        <li>DBA bersama desainer basis data menggunakan pernyataan dalam DDL , SDL (Storage Definition
+                            Language) dari DBMS terpilih digunakan untuk membuat skema basisdata dan file basis data
+                            (kosong).
+                        </li>
+                        <li>Basis data kemudian dipopulasikan dengan data.</li>
+                        <li>Jika data diubah dari sistem komputerisasi sebelumnya, rutin konversi diperlukan untuk
+                            format kembali data untuk menyimpan ke basis data baru.</li>
+                        <li>Transaksi basis data harus diimplementasikan dengan aplikasi yang dibuat programmer</li>
+                        <li>Melakukan uji coba kode porgram dengan perintah DML</li>
+                        <li>Jika transaksi siap dan data disimpan ke basis data, tahap rancangan dan implementasi
+                            selesai dan tahap operasi dari sistem basis data dimulai.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- container atas -->
+    <footer>
+        <div class="bg-dark">
+            <p class="text-white" align="center">Copyright &copy; 2020 </p>
+            <p class="text-white" align="center">Mardiani - D121181340</p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
