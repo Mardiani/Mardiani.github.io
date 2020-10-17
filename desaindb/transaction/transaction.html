@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style04.css">
+
+    <title>TUGAS 04</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-dark font-weight-bold" href="#">BASIS DATA II</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link js-scroll-trigger text-dark" href="../index.html">HOME <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#tugas" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            TUGAS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="../../tbo.html">TBO</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="../index.html">Basis Data</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger text-dark" href="../profile/profile.html">PROFIL</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- jumbotron -->
+    <div id="background">
+        <div class="jumbotron">
+            <h1>DATABASE TRANSACTION</h1>
+        </div>
+    </div>
+
+    <!-- jumbotron -->
+
+    <!-- container atas -->
+    <div id="home">
+        <div class="isi">
+            <div class="container atas">
+                <h1> ..</h1>
+                <div class="row">
+                    <p>Dalam database management system (dbms) ada yang di sebut transaction. Transaction dalam dbms ini
+                        bertujuan untuk menggabungkan beberapa statement perubahan kedalam database menjadi dianggap
+                        satu kesatuan. Dilakukan semuanya atau tidak sama sekali <b>(all or nothing)</b> sehingga tidak
+                        terjadi
+                        ketidakkonsistenan data.. Transaksi mempunyai 2 fungsi utama:
+                    </p>
+                    <ol>
+                        <li>Menyediakan reliabilitas, artinya jika terjadi kesalahan pada salah satu statement maka
+                            seluruh perubahan akan digagalkan. Sehingga data yang tersimpan benar benar reliable(dapat
+                            diandalkan).</li>
+                        <li>Melakukan isolasi, artinya satu transaksi harus di proses satu persatu. Sehingga tidak ada
+                            kemungkinan 2 program mengakses atau bahkan mengubah data sekaligus</li>
+                    </ol>
+
+                    <p>Untuk memastikan integritas data tetap terjaga dan transaksi dapat berjalan dengan baik, maka
+                        system database harus menjadi properti-properti yang terdapat didalam transaksi.
+                        Properti-properti didalam transaksi ini dikenal dengan istilah properti ACID (Atomicity,
+                        Consistency, Isolation, Durability):</p>
+                    <ol>
+                        <li> <b>Automicity</b> , Adalah suatu aturan dimana perubahan dilakukan secara keseluruhan atau
+                            tidak
+                            sama sekali. Sehingga jika di tengah transaksi terjadi kegagalan maka seruluruh perubahan
+                            akan di batalkan dan di kembalikan kekondisi semula. Kegagalan disini bisa terjadi karena
+                            aplikasi, system, database dsb.</li>
+                        <li> <b>Consistency</b> . Jika basis data awalnya dalam keadaan konsisten maka pelaksanaan
+                            transaksi
+                            sendirinya juga harus meninggalkan basis data tetap dalam status konsisten.</li>
+                        <li> <b>Isolation</b> . Pada prinsip isolation, data yang sedang di lakukan perubahan tidak
+                            boleh diakses
+                            oleh lebih dari satu operasi. Harus hanya satu operasi yang melakukan perubahan ini.
+                            Sehingga jika ada operasi lain yang akan merubah maka harus menunggu sampai transaksi yang
+                            berlangsung selesai.</li>
+                        <li> <b>Durability</b> . Kemampuan DBMS untuk menyimpan data transaksi yang terjadi. Sehingga
+                            jika
+                            terjadi kegagalan, DBMS menjamin bahwa data transaksi yang telah tersimpan tidak akan
+                            hilang. Banyak DBMS yang menuliskan log untuk suatu transaksi yang dapat digunakan ketika
+                            terjadi error pada hardware maupun software.</li>
+                    </ol>
+
+                </div>
+                <div class="row">
+                    <h5>Contoh Kasus : </h5>
+                    <p> <b>Proses Transaksi Peminjaman Buku di Perpustakaan</b></p>
+                    <p>Tampilan pilihan menu: Pada bagian ini, terdapat beberapa menu yang akan di pilih oleh admin
+                        perpustakaan, yaitu:</p>
+                    <ol>
+                        <li>Input data buku. Input data buku yaitu admin memasukkan data buku baru yang akan disimpan di
+                            perpustakaan. Inputan yang harus dimasukkan berupa: kode buku, judul buku, ruang letak
+                            penyimpanan, dan jumlah stok buku yang dimiliki perpustakaan.</li>
+                        <li>Lihat data buku. Pada bagian ini, admin dapat melihat daftar buku-buku yang telah tercatat
+                            pada program, dengan cara menginputkan data pada bagian pertama. Pada bagian ini, program
+                            menampilkan kode buku, judul buku, ruang letak penyimpanan dan stok buku yang tersedia dari
+                            data-data buku yang telah diinputkan.</li>
+                        <li>Cari buku. Pada bagian mencari buku, admin dapat mencari buku dengan cara mengetik judul
+                            buku yang dicari, kemudian program akan mencari buku yang sama. Bila tidak ditemukan maka
+                            program akan langsung memunculkan “press enter to continue”.</li>
+                        <li>Peminjaman. Pada bagian peminjaman, akan memproses data peminjaman yang akan ditampilkan
+                            dengan cara admin memasukkan judul buku kemudian secara otomatis stok buku yang dimiliki
+                            buku yang dipinjam tersebut akan berkurang sesuai dengan jumlah buku yang akan dipinjam.
+                        </li>
+                        <li>Pengembalian. Di bagian ini, admin akan menginputkan judul buku yang telah dipinjam dan
+                            secara otomatis akan manampilkan judul buku, nama peminjam buku ,dan jumlah stok buku yang
+                            dimiliki perpustakaan.</li>
+                        <li>Data peminjaman. Di bagian ini, data buku yang telah dipinjam akan di tampilkan sesuai
+                            jumlah stok buku yang tersedia.</li>
+                        <li>Data pengembalian. Menampilkan data pengembalian buku dan jumlah buku yang di kembalikan.
+                        </li>
+                    </ol>
+                    <h6>Pengujian</h6>
+                    <p>
+                        <img src="gambar1.png" align="top" />
+                        Program akan login untuk masuk ke menu utama, bila user atau password salah, maka akan tertulis
+                        user atau pass salah.
+                    </p>
+                    <p>
+                        <img src="gambar2.png" align="top" />
+                        Tampilan pada menu utama setelah login berhasil.
+                    </p>
+                    <p>
+                        <img src="gambar3.png" align="top" />
+                        Setelah tampilan menu, user menginputkan angka 1 untuk memasukkan data buku untuk disimpan di
+                        dalam program nantinya.
+                    </p>
+                    <p>
+                        <img src="gambar4.png" align="top" />
+                        Setelah menginputkan data user akan kembali ke menu awal, kemudian bila memilih menu 2 akan
+                        tampil sebagai berikut.
+                    </p>
+                    <p>
+                        <img src="gambar5.png" align="top" />
+                        Contoh tampilan lihat view setelah user menginputkan beberapa data buku.
+                    </p>
+                    <p>
+                        <img src="gambar6.png" align="top" />
+                        Tampilan menu bahwa user memilih tiga untuk mencari data
+                    </p>
+                    <p>
+                        <img src="gambar7.png" align="top" />
+                        Proses pencarian dengan memasukkan judul buku yang dicari.
+                    </p>
+                    <p>
+                        <img src="gambar8.png" align="top" />
+                        Bila pencarian berhasil akan menampilkan letak lemari dan stok buku.
+                    </p>
+                    <p>
+                        <img src="gambar9.png" align="top" />
+                        Pada menu peminjaman akan tampil judul buku yang akan dipinjam dan jumlah yang dapat dipinjam.
+                    </p>
+                    <p>
+                        <img src="gambar10.png" align="top" />
+                        Pada tampilan view akan menampilkan buku yang telah dipinjam.
+                    </p>
+                    <p>
+                        <img src="gambar11.png" align="top" />
+                        Pada tampilan view setelah di lakukan peminjaman jumlah buku akan berkurang.
+                    </p>
+                    <p>
+                        <img src="gambar12.png" align="top" />
+                        Data peminjam yang ada setelah dilakukan peminjaman.
+                    </p>
+                    <p>
+                        <img src="gambar13.png" align="top" />
+                        Data setelah adanya pengembalian
+                    </p>
+                </div>
+
+                <div class="row">
+                    <p>Berdasarkan contoh tersebut ditinjau kebutuhan ACID-nya, maka:</p>
+                    <ol>
+                        <li>Kebutuhan Atomik (Atomicity Requierements)
+                            <p>Jika transaksi gagal pada proses peminjaman buku, maka system harus memastikan bahwa
+                                perubahan yang terjadi tidak tersimpan ke database, atau akan terjadi ikonsistensi data.
+                                Dengan kata lain, selesaikan transaksi atau tidak sama sekali. Contohnya jika seorang
+                                mahasiswa ingin meminjam buku dan telah memilih 5 buku yang ingin dipinjam. Namun
+                                kegagalan sistem, proses proses transaksi tersebut tidal berhasil, maka proses transaksi
+                                tersebut harus dibatalkan/ tidak dilaksanakan sama sekali. Atau jika tidak maka jumlah
+                                buku di system akan terkurang 5, tetapi jumlah diperpustakaan tetap sama (tidak
+                                terkurang sama sekali).</p>
+                        </li>
+                        <li>Kebutuhan Konssistensi (Consisteny Requierements)
+                            <p>Total jumlah buku diperpustakaan harus tetap. Tidak berubah jumlahnya baik sebelum
+                                peminjaman maupun setelah peminjaman. Maksudnya dalam hal ini jumlah buku yang tersisa
+                                diperpustakaan ditambah jumlah buku yang telah dipinjam.</p>
+                        </li>
+                        <li>Kebutuhan Isolasi (Isolation Requierements)
+                            <p>Jika pada saat proses transaksi peminjaman buku oleh seroang mahasiswa (si A) ada
+                                transaksi
+                                peminjaman oleh mahasiswa lain (si B), maka akan menyebabkan ikonsistensi terhadap
+                                database.
+                                Contohnya jika si A meminjam 5 buku (matematika, Bahasa inggris, bahas Indonesia, agama,
+                                dan
+                                Pkn), sedangkan stok buku pkn yang ada sisa 1, dan belum selesai proses transaski si A,
+                                si B
+                                juga meminjam buku yang sama, maka akan menyebabkan jumlah buku Pkn lebih banyak 1 buah
+                                dari
+                                yang seharusnya. Untuk menghindari hal tersebut, maka transaksi peminjaman harus
+                                dilaksanan
+                                secara serial (satu persatu)</p>
+                        </li>
+                        <li>Kebutuhan Durabilitas (Durability Requierements)
+                            <p>Pada saat eksekusi transaksi peminjaman telah selesai dan si peminjam telah menerima buku
+                                yang dipinjam, maka harus dipastikan tidak ada kesalahan system yang akan terjadi yang
+                                menyebabkan hilangnya data yang berkaitan dengan proses transfer peminjaman buku.</p>
+                        </li>
+                    </ol>
+
+                </div>
+            </div>
+        </div>
+        <!-- container atas -->
+        <footer>
+            <div class="bg-dark">
+                <p class="text-white" align="center">Copyright &copy; 2020 </p>
+                <p class="text-white" align="center">Mardiani - D121181340</p>
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
